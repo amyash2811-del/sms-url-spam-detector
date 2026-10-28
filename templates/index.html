@@ -1,15 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f8fc">
   <meta name="description" content="A simple educational tool for checking suspicious SMS messages and URLs.">
-  <title>Sentinel — SMS & URL Security Scanner</title>
+  <title>Sentinel â€” SMS & URL Security Scanner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="app-shell">
@@ -19,10 +19,10 @@
         <span class="brand-copy"><strong>sentinel<span>.</span></strong><small>MESSAGE SECURITY</small></span>
       </a>
       <div class="side-label">WORKSPACE</div>
-      <a class="nav-item active" href="#overview"><span class="nav-icon">▦</span> Overview</a>
-      <a class="nav-item" href="#sms-panel"><span class="nav-icon">▤</span> SMS scanner</a>
-      <a class="nav-item" href="#url-panel"><span class="nav-icon">↗</span> URL inspector</a>
-      <div class="sidebar-tip"><div class="tip-icon">✦</div><strong>Think before you click.</strong><p>Check unexpected messages and links before taking action.</p></div>
+      <a class="nav-item active" href="#overview"><span class="nav-icon">â–¦</span> Overview</a>
+      <a class="nav-item" href="#sms-panel"><span class="nav-icon">â–¤</span> SMS scanner</a>
+      <a class="nav-item" href="#url-panel"><span class="nav-icon">â†—</span> URL inspector</a>
+      <div class="sidebar-tip"><div class="tip-icon">âœ¦</div><strong>Think before you click.</strong><p>Check unexpected messages and links before taking action.</p></div>
       <div class="side-bottom"><span class="status-dot"></span><div><b>Local engine</b><small>Ready for analysis</small></div><span class="status-label">ONLINE</span></div>
     </aside>
 
@@ -35,45 +35,46 @@
       <nav class="mobile-nav" aria-label="Quick navigation"><a href="#overview">Overview</a><a href="#sms-panel">SMS scanner</a><a href="#url-panel">URL inspector</a></nav>
 
       <section class="welcome">
-        <div class="welcome-copy"><div class="eyebrow"><span></span> PERSONAL SECURITY WORKSPACE</div><h1>Spot the suspicious.<br><em>Stay one step ahead.</em></h1><p>Analyze message text and web addresses for common signs of spam and suspicious activity.</p><div class="welcome-badges"><span><b>✓</b> Private local analysis</span><span><b>✓</b> No links opened</span></div></div>
-        <div class="hero-visual" aria-hidden="true"><div class="hero-glow"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-shield"><svg viewBox="0 0 64 72"><path d="M32 3 56 12v19c0 16-10.3 28.4-24 36C18.3 59.4 8 47 8 31V12L32 3Z"/><path d="m21 35 7.2 7.2L44 26"/></svg></div><span class="float-chip chip-one">SMS <b>✓</b></span><span class="float-chip chip-two">URL <b>✓</b></span></div>
+        <div class="welcome-copy"><div class="eyebrow"><span></span> PERSONAL SECURITY WORKSPACE</div><h1>Spot the suspicious.<br><em>Stay one step ahead.</em></h1><p>Analyze message text and web addresses for common signs of spam and suspicious activity.</p><div class="welcome-badges"><span><b>âœ“</b> Private local analysis</span><span><b>âœ“</b> No links opened</span></div></div>
+        <div class="hero-visual" aria-hidden="true"><div class="hero-glow"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-shield"><svg viewBox="0 0 64 72"><path d="M32 3 56 12v19c0 16-10.3 28.4-24 36C18.3 59.4 8 47 8 31V12L32 3Z"/><path d="m21 35 7.2 7.2L44 26"/></svg></div><span class="float-chip chip-one">SMS <b>âœ“</b></span><span class="float-chip chip-two">URL <b>âœ“</b></span></div>
       </section>
 
       <section class="section-heading"><div><h2>Your security toolkit</h2><p>Two quick checks, one safer inbox.</p></div><span class="section-caption">OVERVIEW</span></section>
       <section class="metrics" aria-label="Scanner capabilities">
-        <article class="metric-card"><div class="metric-top"><span class="metric-icon teal">⌁</span><span class="metric-status"><i></i> ACTIVE</span></div><div class="metric-label">ANALYSIS ENGINE</div><div class="metric-value">ML + Rules</div><div class="metric-foot">Machine learning and URL heuristics</div></article>
-        <article class="metric-card"><div class="metric-top"><span class="metric-icon blue">▤</span><span class="metric-status"><i></i> READY</span></div><div class="metric-label">SMS CLASSIFIER</div><div class="metric-value">Text analysis</div><div class="metric-foot">TF-IDF features with logistic regression</div></article>
-        <article class="metric-card"><div class="metric-top"><span class="metric-icon purple">↗</span><span class="metric-status"><i></i> LOCAL</span></div><div class="metric-label">URL INSPECTOR</div><div class="metric-value">Pattern check</div><div class="metric-foot">Submitted links are not opened</div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon teal">âŒ</span><span class="metric-status"><i></i> ACTIVE</span></div><div class="metric-label">ANALYSIS ENGINE</div><div class="metric-value">ML + Rules</div><div class="metric-foot">Machine learning and URL heuristics</div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon blue">â–¤</span><span class="metric-status"><i></i> READY</span></div><div class="metric-label">SMS CLASSIFIER</div><div class="metric-value">Text analysis</div><div class="metric-foot">TF-IDF features with logistic regression</div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-icon purple">â†—</span><span class="metric-status"><i></i> LOCAL</span></div><div class="metric-label">URL INSPECTOR</div><div class="metric-value">Pattern check</div><div class="metric-foot">Submitted links are not opened</div></article>
       </section>
 
-      <section class="section-heading scanner-title"><div><h2>Run a security check</h2><p>Paste a message or inspect a link below.</p></div><span class="privacy-note"><span>▣</span> Your input stays in this local demo</span></section>
+      <section class="section-heading scanner-title"><div><h2>Run a security check</h2><p>Paste a message or inspect a link below.</p></div><span class="privacy-note"><span>â–£</span> Your input stays in this local demo</span></section>
       <section class="scanner-grid">
         <article class="panel" id="sms-panel">
-          <div class="panel-heading"><div class="panel-symbol teal-bg"><span>▤</span></div><div class="panel-title"><h2>SMS spam scanner</h2><p>Check a text message for spam patterns.</p></div><span class="tag">TEXT AI</span></div>
+          <div class="panel-heading"><div class="panel-symbol teal-bg"><span>â–¤</span></div><div class="panel-title"><h2>SMS spam scanner</h2><p>Check a text message for spam patterns.</p></div><span class="tag">TEXT AI</span></div>
           <label for="sms-input">MESSAGE CONTENT</label>
-          <textarea id="sms-input" maxlength="5000" placeholder="Paste the message you want to check…&#10;&#10;Example: Congratulations! You have won a prize. Click the link to claim." aria-describedby="sms-help sms-count"></textarea>
+          <textarea id="sms-input" maxlength="5000" placeholder="Paste the message you want to checkâ€¦&#10;&#10;Example: Congratulations! You have won a prize. Click the link to claim." aria-describedby="sms-help sms-count"></textarea>
           <div class="input-meta"><span id="sms-help">Never enter passwords or one-time codes.</span><span id="sms-count">0 / 5000</span></div>
-          <button class="primary-button" id="sms-submit" type="button"><span>Analyze message</span><span class="button-arrow" aria-hidden="true">→</span></button>
+          <button class="primary-button" id="sms-submit" type="button"><span>Analyze message</span><span class="button-arrow" aria-hidden="true">â†’</span></button>
           <div class="result-box hidden" id="sms-result" aria-live="polite"></div>
-          <div class="panel-foot"><span class="foot-check">✓</span> Message content is analyzed as text.</div>
+          <div class="panel-foot"><span class="foot-check">âœ“</span> Message content is analyzed as text.</div>
         </article>
 
         <article class="panel" id="url-panel">
-          <div class="panel-heading"><div class="panel-symbol purple-bg"><span>↗</span></div><div class="panel-title"><h2>URL inspector</h2><p>Review a link for common warning signs.</p></div><span class="tag purple-tag">RULE BASED</span></div>
+          <div class="panel-heading"><div class="panel-symbol purple-bg"><span>â†—</span></div><div class="panel-title"><h2>URL inspector</h2><p>Review a link for common warning signs.</p></div><span class="tag purple-tag">RULE BASED</span></div>
           <label for="url-input">URL / WEB ADDRESS</label>
-          <div class="url-input-wrap"><span aria-hidden="true">↗</span><input id="url-input" type="text" maxlength="2000" placeholder="https://example.com/login" autocomplete="url" spellcheck="false"></div>
-          <div class="url-hint"><span class="lock">▣</span> Safe to inspect: the URL is not opened.</div>
+          <div class="url-input-wrap"><span aria-hidden="true">â†—</span><input id="url-input" type="text" maxlength="2000" placeholder="https://example.com/login" autocomplete="url" spellcheck="false"></div>
+          <div class="url-hint"><span class="lock">â–£</span> Safe to inspect: the URL is not opened.</div>
           <div class="example-row"><span>Try a sample</span><button class="example-chip" type="button" data-url="https://www.example.com">Normal-looking</button><button class="example-chip" type="button" data-url="http://192.168.1.22/verify-account">Suspicious pattern</button></div>
-          <button class="primary-button purple-button" id="url-submit" type="button"><span>Inspect URL</span><span class="button-arrow" aria-hidden="true">→</span></button>
+          <button class="primary-button purple-button" id="url-submit" type="button"><span>Inspect URL</span><span class="button-arrow" aria-hidden="true">â†’</span></button>
           <div class="result-box hidden" id="url-result" aria-live="polite"></div>
-          <div class="panel-foot"><span class="foot-check purple-check">✓</span> No live reputation lookup is performed.</div>
+          <div class="panel-foot"><span class="foot-check purple-check">âœ“</span> No live reputation lookup is performed.</div>
         </article>
       </section>
 
       <section class="bottom-note"><div class="note-icon">i</div><div><b>A quick note on safety</b><p>Sentinel is an educational demonstration, not a live threat-intelligence service. A low-risk result does not guarantee a message or link is safe. Verify unexpected requests through a trusted, independent channel.</p></div></section>
-      <footer><div class="footer-brand">sentinel<span>.</span></div><span>EDUCATIONAL CYBERSECURITY PROJECT</span><span class="footer-right">LOCAL DEMO <i>•</i> NO LIVE URL LOOKUPS</span></footer>
+      <footer><div class="footer-brand">sentinel<span>.</span></div><span>EDUCATIONAL CYBERSECURITY PROJECT</span><span class="footer-right">LOCAL DEMO <i>â€¢</i> NO LIVE URL LOOKUPS</span></footer>
     </main>
   </div>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+
